@@ -1,0 +1,2 @@
+module SalersHelper
+end

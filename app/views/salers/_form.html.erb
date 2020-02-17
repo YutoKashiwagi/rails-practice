@@ -1,0 +1,22 @@
+<%= form_with(model: saler, local: true) do |form| %>
+  <% if saler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(saler.errors.count, "error") %> prohibited this saler from being saved:</h2>
+
+      <ul>
+      <% saler.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :saler_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

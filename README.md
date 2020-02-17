@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 練習用のリポジトリ
 
-Things you may want to cover:
+### Model
 
-* Ruby version
+- Saler
+  - name:string
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Item
+  - belogs_to :saler
+  - title:string
+  - price:integer
+  
